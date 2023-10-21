@@ -1,10 +1,8 @@
 const utils = require.main.require('@screeps/backend/lib/utils.js')
 
-const INVADER_ID = '2';
-
 module.exports = (config) => {
+  // Remove bots on server init
   if (config.engine) {
-    // Remove bots
     config.engine.on('init', async type => {
       if (type === 'main') {
         const { db, env } = config.common.storage;
@@ -19,16 +17,13 @@ module.exports = (config) => {
         }
       }
     });
+  }
 
-    // Remove invaders
-    config.engine.on('processRoom', (roomId, roomInfo, roomObjects, roomTerrain, gameTime, objectsUpdate, usersUpdate, eventLog) => {
-      if (!roomObjects) return;
-      for (const object of Object.values(roomObjects)) {
-        if (object.user === INVADER_ID) {
-          console.log(`Removing invader ${object.type} (${object._id}) from ${roomId} at ${gameTime}.`);
-          objectsUpdate.remove(object._id);
-        }
-      }
-    });
+  // Remove cronjobs
+  if (config.cronjobs) {
+    console.log(`Removing stronghold and invader cronjobs.`);
+    delete config.cronjobs.genInvaders;
+    delete config.cronjobs.genStrongholds;
+    delete config.cronjobs.expandStrongholds;
   }
 };
