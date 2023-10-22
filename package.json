@@ -1,7 +1,7 @@
 {
-  "name": "screepsmod-speedrun",
+  "name": "@admon-dev/screepsmod-speedrun",
   "version": "1.0.0",
-  "description": "",
+  "description": "A screeps mod to help configure the server for a speedrun.",
   "main": "index.js",
   "scripts": {
     "2npm": "publish"
@@ -16,5 +16,9 @@
   "devDependencies": {
     "publish": "^0.6.0"
   },
-  "dependencies": {}
+  "repository": "github:admon84/screepsmod-speedrun",
+  "bugs": {
+    "url": "https://github.com/admon84/screepsmod-speedrun/issues"
+  },
+  "homepage": "https://github.com/admon84/screepsmod-speedrun#readme"
 }
