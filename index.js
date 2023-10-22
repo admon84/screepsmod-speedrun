@@ -10,7 +10,7 @@ module.exports = (config) => {
         for (const { _id, rooms, username } of bots) {
           console.log(`Removing bot ${username} from ${rooms[0]}.`);
           await utils.respawnUser(_id);
-          await db.users.removeWhere({ _id: _id });
+          await db.users.removeWhere({ _id });
           await db['users.code'].removeWhere({ user: _id });
           await env.del(env.keys.MEMORY + _id);
           await env.del(env.keys.MEMORY_SEGMENTS + _id);

@@ -1,20 +1,20 @@
 {
-  "name": "screepsmod-template",
+  "name": "screepsmod-speedrun",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "2npm": "publish"
   },
-  "devDependencies": {
-    "publish": "^0.6.0"
-  },
   "screeps_mod": true,
   "keywords": [
     "screeps",
     "mod"
   ],
-  "author": "Adam Shumann",
+  "author": "admon84",
   "license": "MIT",
+  "devDependencies": {
+    "publish": "^0.6.0"
+  },
   "dependencies": {}
 }
