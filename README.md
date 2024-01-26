@@ -5,4 +5,4 @@
 [![License](https://img.shields.io/npm/l/screepsmod-speedrun.svg)](https://npmjs.com/package/@admon-dev/screepsmod-speedrun)
 [![Version](https://img.shields.io/npm/v/screepsmod-speedrun.svg)](https://npmjs.com/package/@admon-dev/screepsmod-speedrun)
 
-![npm](https://nodei.co/npm/@admon-dev/screepsmod-speedrun.png "NPM")
+[![NPM](https://nodei.co/npm/@admon-dev/screepsmod-speedrun.png)](https://nodei.co/npm/@admon-dev/screepsmod-speedrun)
