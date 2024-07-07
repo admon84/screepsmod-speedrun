@@ -1,6 +1,6 @@
 {
   "name": "@admon-dev/screepsmod-speedrun",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A screeps mod to help configure the server for a speedrun.",
   "main": "index.js",
   "scripts": {
